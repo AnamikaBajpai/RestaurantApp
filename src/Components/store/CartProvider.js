@@ -35,15 +35,15 @@ const removeItemFromCartHandler = id => {
 };
 
 
-    const cartContect = {
+    const cartContext = {
         items: cartState.items,
-        totalamount: cartState.totalAmount,
+        totalAmount: cartState.totalAmount,
         addItem:  addItemToCartHandler,
         removeItem: removeItemFromCartHandler,
     }
   return (
 
-<CartContext.Provider value={cartContect}>
+<CartContext.Provider value={cartContext}>
     {props.children}
 </CartContext.Provider>
 
